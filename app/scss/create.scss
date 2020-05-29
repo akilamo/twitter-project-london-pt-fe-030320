@@ -1,0 +1,65 @@
+// .createTweet {
+
+.create-tweet {
+  // background: url(../img/path-header.png) no-repeat;
+  // height: 100vh;
+  background-color: black;
+  padding-bottom: 10%;
+
+
+  button {
+    border: 0;
+    line-height: 2;
+    padding: 0 20px;
+    // font-size: 1rem;
+    // text-align: center;
+    color: black;
+    border-radius: 5px;
+    background-color: yellow;
+    cursor: pointer;
+  }
+
+  .create-actions {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid yellow;
+    align-items: center;
+    padding: 3% 5%;
+  }
+}
+
+.create-box {
+  background: url(../img/path-header.png) no-repeat;
+  height: 40vh;
+
+  .textbox {
+    border: 1px solid yellow;
+    color: yellow;
+    height: 28vh;
+    margin: 0 5%;
+  }
+
+  textarea {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+  }
+}
+
+.humans {
+  display: flex;
+  justify-content: center;
+}
+
+// .human2{
+//     margin: 0 -10%;
+//     position: relative;
+// }
+
+// .human1 {
+//     margin: 0 15%;
+// }
+
+// }

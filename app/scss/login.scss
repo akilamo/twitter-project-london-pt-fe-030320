@@ -1,0 +1,99 @@
+
+// *{
+//     box-sizing: border-box;
+//     font-family: 'Open Sans', sans-serif;
+//     font-family: 'Roboto', sans-serif;
+// }
+
+
+// body{
+//     width: 414px;
+//     background-color: black;
+// }
+
+
+
+.person-sitting{
+    height: fit-content;
+    position: absolute;
+}
+
+input[type=text]{
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FAFF00;
+    background-color: black;
+    font-style: italic;
+    // width: 90%;
+    position: relative;
+    color: white;
+}
+
+input[type=password]{
+    // display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FAFF00;
+    background-color: black;
+    font-style: italic;
+    // width: 90%;
+    // position: relative;
+    color: white;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // height: 35vh;
+    margin-top: 30%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+input[type=password]{
+    position:absolute;
+    // margin-top: 40%;
+margin-top: 10%;
+    text-decoration: none;
+  display: inline-block;
+
+}
+
+input[type=submit]{
+    position: absolute;
+    margin-top: 30%;
+    right: 50%;
+
+        border: 0;
+        line-height: 1.5;
+        padding: 0 20px;
+        // font-size: 1rem;
+        text-align: center;
+        color: black;
+        border-radius: 5px;
+        background-color: yellow;
+        cursor: pointer;
+  
+
+
+}
+
+.loginError {
+    background-color: yellow;
+    color: red;
+    position: relative;
+    align-self: end;
+    font-weight: bold;
+}
+
+.inputs {
+    margin-top: 100%;
+}
