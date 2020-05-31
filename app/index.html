@@ -9,31 +9,41 @@
     <title>Twitter</title>
 </head>
 
-<body style="background-color: black;">
+<body>
+<div class="login-page">
+
+    <div class="polygons">
+        <img src="./img/Polygon-1.png" class="polygon1" alt="image-background">
+        <img src="./img/Polygon-2.png" alt="" class="polygon2">
+        <img src="./img/Polygon-3.png" alt="" class="polygon3">
+        <img src="./img/Polygon-4.png" alt="" class="polygon4">
+        <img src="./img/Polygon-5.png" alt="" class="polygon5">
+        <img src="./img/Polygon-6.png" alt="" class="polygon6">
+
+    </div>
+ 
+
 
     <div class="login-container">
         <div class="person-sitting">
             <img src="img/sitting.png" alt="person-sitting">
         </div>
 
-        <form action='home.html'>
-      
-            <div class="inputs">
-                <input type="text" id="username" placeholder="User name">
-                <input type="password" id="password" placeholder="Password">
-            </div>
-    
-            <div>
-                <!-- <input type="submit" value="Login" class="login"> -->
-            
-                <button type="submit">Login</button>
-          
-            </div>
-        </form>
-   
-
-       
+        <div class="input-data">
+            <form action='home.html'>
+                <div class="inputs">
+                    <input type="text" id="username" placeholder="User name" class="input-default">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+        
+                <div class="submit">
+                    <!-- <input type="submit" value="Login" class="login"> -->
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>   
 </body>
 <script type="module" src="./js/index.js"></script>
 

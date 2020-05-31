@@ -1,99 +1,139 @@
+.login-page {
+  
+  $error: rgb(191, 7, 84);
 
-// *{
-//     box-sizing: border-box;
-//     font-family: 'Open Sans', sans-serif;
-//     font-family: 'Roboto', sans-serif;
-// }
+  background-color: black;
+  height: 100vh;
 
+  .polygons {
+    position: absolute;
+    height: 100vh;
+    width: 414px;
+    overflow: hidden;
+    z-index: auto;
 
-// body{
-//     width: 414px;
-//     background-color: black;
-// }
+    .polygon1 {
+      position: absolute;
+      bottom: 30%;
+      right: 0%;
+      z-index: auto;
+    }
 
+    .polygon2 {
+      position: absolute;
+      top: 80%;
+    }
 
+    .polygon3 {
+      position: absolute;
+    }
+    .polygon5 {
+      position: absolute;
+      right: 30%;
+      bottom: 0%;
+    }
 
-.person-sitting{
+    .polygon6 {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+    }
+  }
+
+  .person-sitting {
     height: fit-content;
     position: absolute;
-}
+  }
 
-input[type=text]{
+  .input-default {
     display: block;
     border: none;
     outline: none;
-    border-bottom: 1px solid #FAFF00;
+    border-bottom: 1px solid #faff00;
     background-color: black;
-    font-style: italic;
-    // width: 90%;
     position: relative;
     color: white;
-}
 
-input[type=password]{
-    // display: block;
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+
+  .error {
+    display: block;
     border: none;
     outline: none;
-    border-bottom: 1px solid #FAFF00;
+    border-bottom: 1px solid $error;
+    box-shadow: 0 0 5px $error;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid $error;
+    color:$error;
+  }
+
+  input[type="password"] {
+      border: none;
+    outline: none;
+    border-bottom: 1px solid #faff00;
     background-color: black;
     font-style: italic;
-    // width: 90%;
-    // position: relative;
     color: white;
-}
+  }
 
-.login-container {
+  .login-container {
     display: flex;
     justify-content: center;
+    padding-top: 30%;
+  }
+
+  .input-data {
+    display: flex;
     position: relative;
-    // height: 35vh;
-    margin-top: 30%;
-}
+  }
 
-form {
+  form {
     display: flex;
     justify-content: center;
-    // position: absolute;
     align-self: flex-end;
     flex-direction: column;
-}
+  }
 
-input[type=password]{
-    position:absolute;
-    // margin-top: 40%;
-margin-top: 10%;
-    text-decoration: none;
-  display: inline-block;
+  .submit {
+    position: relative;
+    align-self: center;
+    margin-top: 40%;
 
-}
+    & button {
+      border: 0;
+      line-height: 1.5;
+      padding: 0 20px;
+      text-align: center;
+      color: black;
+      border-radius: 3px;
+      background-color: yellow;
+      cursor: pointer;
+    }
+  }
 
-input[type=submit]{
+  input[type="password"] {
     position: absolute;
-    margin-top: 30%;
-    right: 50%;
+    margin-top: 10%;
+    text-decoration: none;
+    display: inline-block;
+  }
 
-        border: 0;
-        line-height: 1.5;
-        padding: 0 20px;
-        // font-size: 1rem;
-        text-align: center;
-        color: black;
-        border-radius: 5px;
-        background-color: yellow;
-        cursor: pointer;
-  
-
-
-}
-
-.loginError {
-    background-color: yellow;
-    color: red;
+  .loginError {
+    color: $error;
     position: relative;
     align-self: end;
     font-weight: bold;
-}
+    margin-top: 10%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.inputs {
+  .inputs {
     margin-top: 100%;
+  }
 }

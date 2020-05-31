@@ -31,8 +31,8 @@
       "id": 1,
       "userId": 1,
       "content": "Lip-Sync for Your Life",
-      "likes": 96,
-      "retweets": 39,
+      "likes": 98,
+      "retweets": 40,
       "date": "26/05/2020"
     },
     {
@@ -47,8 +47,8 @@
       "id": 3,
       "userId": 1,
       "content": "I'll index the 1080p PNG port, that should bandwidth the SAS array!",
-      "likes": 197,
-      "retweets": 32,
+      "likes": 199,
+      "retweets": 34,
       "date": "1/05/2020"
     },
     {
@@ -95,7 +95,7 @@
       "id": 9,
       "userId": 1,
       "content": "When Chuck Norris points to null, null quakes in fear.",
-      "likes": 4,
+      "likes": 5,
       "retweets": 21,
       "date": "16/05/2020"
     },
@@ -127,8 +127,8 @@
       "id": 13,
       "userId": 3,
       "content": "Who's the more foolish; the fool, or the fool who follows him?",
-      "likes": 200,
-      "retweets": 11,
+      "likes": 201,
+      "retweets": 12,
       "date": "10/05/2020"
     },
     {
@@ -229,10 +229,35 @@
     },
     {
       "id": 26,
-      "content": "test test 2",
+      "userId": 1,
+      "content": "hello darkness my old friend",
       "likes": 0,
       "retweets": 0,
       "date": "29/05/2020"
+    },
+    {
+      "id": 27,
+      "userId": 2,
+      "content": "hello",
+      "likes": 0,
+      "retweets": 0,
+      "date": "30/05/2020"
+    },
+    {
+      "userId": 2,
+      "content": "without ID",
+      "likes": 0,
+      "retweets": 0,
+      "date": "30/05/2020",
+      "id": 28
+    },
+    {
+      "userId": 2,
+      "content": "test without ID (again)",
+      "likes": 0,
+      "retweets": 0,
+      "date": "30/05/2020",
+      "id": 29
     }
   ],
   "comments": [
@@ -564,6 +589,27 @@
       "tweetId": 23,
       "content": "Sissy That Walk",
       "date": "19/05/2020"
-    }
+    },
+    {
+      "userId": 2,
+      "tweetId": 1,
+      "content": "lalala",
+      "date": "30/05/2020",
+      "id": 48
+    },
+    {
+      "userId": 2,
+      "tweetId": 2,
+      "content": "he's simply the best",
+      "date": "30/05/2020",
+      "id": 49
+    },
+    {
+      "userId": 1,
+      "tweetId": 5,
+      "content": "depends on the music",
+      "date": "31/05/2020",
+      "id": 50
+    }   
   ]
 }

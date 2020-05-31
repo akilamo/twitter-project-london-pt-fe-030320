@@ -303,83 +303,153 @@ template {
 [hidden] {
   display: none; }
 
-.person-sitting {
-  height: fit-content;
-  position: absolute; }
-
-input[type=text] {
-  display: block;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #FAFF00;
+.login-page {
   background-color: black;
-  font-style: italic;
-  position: relative;
-  color: white; }
+  height: 100vh; }
+  .login-page .polygons {
+    position: absolute;
+    height: 100vh;
+    width: 414px;
+    overflow: hidden;
+    z-index: auto; }
+    .login-page .polygons .polygon1 {
+      position: absolute;
+      bottom: 30%;
+      right: 0%;
+      z-index: auto; }
+    .login-page .polygons .polygon2 {
+      position: absolute;
+      top: 80%; }
+    .login-page .polygons .polygon3 {
+      position: absolute; }
+    .login-page .polygons .polygon5 {
+      position: absolute;
+      right: 30%;
+      bottom: 0%; }
+    .login-page .polygons .polygon6 {
+      position: absolute;
+      top: 10%;
+      right: 10%; }
+  .login-page .person-sitting {
+    height: fit-content;
+    position: absolute; }
+  .login-page .input-default {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #faff00;
+    background-color: black;
+    position: relative;
+    color: white; }
+    .login-page .input-default::placeholder {
+      font-style: italic; }
+  .login-page .error {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bf0754;
+    box-shadow: 0 0 5px #bf0754;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #bf0754;
+    color: #bf0754; }
+  .login-page input[type="password"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #faff00;
+    background-color: black;
+    font-style: italic;
+    color: white; }
+  .login-page .login-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30%; }
+  .login-page .input-data {
+    display: flex;
+    position: relative; }
+  .login-page form {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    flex-direction: column; }
+  .login-page .submit {
+    position: relative;
+    align-self: center;
+    margin-top: 40%; }
+    .login-page .submit button {
+      border: 0;
+      line-height: 1.5;
+      padding: 0 20px;
+      text-align: center;
+      color: black;
+      border-radius: 3px;
+      background-color: yellow;
+      cursor: pointer; }
+  .login-page input[type="password"] {
+    position: absolute;
+    margin-top: 10%;
+    text-decoration: none;
+    display: inline-block; }
+  .login-page .loginError {
+    color: #bf0754;
+    position: relative;
+    align-self: end;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto; }
+  .login-page .inputs {
+    margin-top: 100%; }
 
-input[type=password] {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #FAFF00;
-  background-color: black;
-  font-style: italic;
-  color: white; }
-
-.login-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 30%; }
-
-form {
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  flex-direction: column; }
-
-input[type=password] {
-  position: absolute;
-  margin-top: 10%;
-  text-decoration: none;
-  display: inline-block; }
-
-input[type=submit] {
-  position: absolute;
-  margin-top: 30%;
-  right: 50%;
-  border: 0;
-  line-height: 1.5;
-  padding: 0 20px;
-  text-align: center;
-  color: black;
-  border-radius: 5px;
-  background-color: yellow;
-  cursor: pointer; }
-
-.loginError {
-  background-color: yellow;
-  color: red;
-  position: relative;
-  align-self: end;
-  font-weight: bold; }
-
-.inputs {
-  margin-top: 100%; }
-
-body {
+.home-page body {
   height: 100vh;
   overflow-y: scroll; }
 
-a {
+.home-page a {
   text-decoration: none;
   color: inherit; }
 
-.header {
+.home-page.polygons {
+  position: fixed;
+  height: 100vh;
+  width: 414px;
+  overflow: hidden;
+  z-index: -1; }
+  .home-page.polygons .polygon1 {
+    top: auto;
+    position: fixed;
+    bottom: 30%;
+    right: 50px;
+    overflow: hidden; }
+  .home-page.polygons .polygon2 {
+    position: fixed;
+    top: 90%; }
+  .home-page.polygons .polygon7 {
+    position: fixed;
+    top: 45%;
+    right: 50%;
+    z-index: -1; }
+  .home-page.polygons .human-standing {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: -5%; }
+
+.home-page .header {
   display: flex;
   justify-content: space-evenly;
-  padding: 10% 5%; }
+  padding: 10% 5% 0;
+  margin-bottom: 10%; }
 
-.avatar {
+.home-page .line {
+  align-self: flex-end;
+  border: 1px solid purple;
+  width: 300px;
+  position: absolute;
+  justify-self: auto; }
+
+.home-page .avatar {
   background-color: #faff00;
   height: 86px;
   width: 86px;
@@ -390,34 +460,39 @@ a {
   overflow: hidden;
   cursor: pointer; }
 
-.avatar > input {
+.home-page .avatar > input {
   visibility: hidden;
   width: 0;
   height: 0; }
 
-h2 {
+.home-page h2 {
   margin: 0; }
 
-.user {
-  color: white; }
-  .user .user-details {
+.home-page .user {
+  color: white;
+  width: 50%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid white; }
+  .home-page .user .user-details {
     display: flex;
     justify-content: space-between;
     font-style: italic;
     font-size: 14px; }
-    .user .user-details p {
+    .home-page .user .user-details p {
       margin: 2% 0; }
-  .user .follow-details {
+  .home-page .user .follow-details {
     margin: 3% 0;
     display: flex;
     justify-content: space-between;
     font-size: 14px; }
+    .home-page .user .follow-details p {
+      font-size: 0.9em; }
 
-.path {
+.home-page .path {
   position: absolute;
   z-index: -1; }
 
-.quill {
+.home-page .quill {
   width: 74px;
   height: 74px;
   border-radius: 50%;
@@ -428,14 +503,14 @@ h2 {
   justify-content: center;
   position: fixed;
   bottom: 5%;
-  left: 350px; }
+  left: 330px; }
 
-.tweet-container {
+.home-page .tweet-container {
   width: 85%;
   margin: auto;
   z-index: 1; }
 
-.tweet-unit {
+.home-page .tweet-unit {
   margin-bottom: 10%;
   display: flex;
   flex-direction: column;
@@ -445,30 +520,31 @@ h2 {
   z-index: 2;
   box-shadow: 5px 10px 10px -10px #111; }
 
-.yellow {
+.home-page .yellow {
   background-color: #faff00;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7vh; }
-  .yellow h5, .yellow p {
+  .home-page .yellow h5,
+  .home-page .yellow p {
     margin: 0 5%;
     font-size: smaller; }
-  .yellow p {
+  .home-page .yellow p {
     font-style: italic; }
 
-.tweet-text {
+.home-page .tweet-text {
   font-size: 14px;
   margin: 5%;
   text-align: left; }
 
-.tweet-hashtags {
+.home-page .tweet-hashtags {
   font-size: 14px;
   margin: 0 5%;
   text-align: left;
-  color: #DD00F0; }
+  color: #dd00f0; }
 
-.actions {
+.home-page .actions {
   padding-top: 3%;
   margin: 5%;
   display: flex;
@@ -477,41 +553,42 @@ h2 {
   align-items: center;
   font-size: smaller;
   border-top: lightgray 1px solid; }
-  .actions div {
+  .home-page .actions div {
     display: flex;
     align-items: center; }
-  .actions span {
+  .home-page .actions span {
     padding-left: 15%; }
 
-.reply-section {
+.home-page .reply-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 2% 8%; }
-  .reply-section textarea {
-    margin-bottom: 3%;
-    font-style: italic; }
-  .reply-section .reply-actions {
+  .home-page .reply-section textarea {
+    margin-bottom: 3%; }
+    .home-page .reply-section textarea::placeholder {
+      font-style: italic; }
+  .home-page .reply-section .reply-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15%; }
-  .reply-section button {
+  .home-page .reply-section button {
     border: 0;
     line-height: 1.5;
     padding: 0 20px;
     text-align: center;
-    color: yellow;
+    color: #faff00;
     border-radius: 5px;
     background-color: black;
     cursor: pointer; }
-  .reply-section .arrow {
+  .home-page .reply-section .arrow {
     cursor: pointer; }
 
-.inactive {
+.home-page .inactive {
   display: none; }
 
-.active {
+.home-page .active {
   display: flex; }
 
 * {
@@ -531,12 +608,12 @@ body {
     padding: 0 20px;
     color: black;
     border-radius: 5px;
-    background-color: yellow;
+    background-color: #faff00;
     cursor: pointer; }
   .create-tweet .create-actions {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid #faff00;
     align-items: center;
     padding: 3% 5%; }
 
@@ -544,8 +621,8 @@ body {
   background: url(../img/path-header.png) no-repeat;
   height: 40vh; }
   .create-box .textbox {
-    border: 1px solid yellow;
-    color: yellow;
+    border: 1px solid #faff00;
+    color: #faff00;
     height: 28vh;
     margin: 0 5%; }
   .create-box textarea {
@@ -554,21 +631,154 @@ body {
     height: 100%;
     color: white;
     border: none; }
+    .create-box textarea::placeholder {
+      font-style: italic; }
+
+.polygons {
+  position: fixed;
+  height: 100vh;
+  width: 414px;
+  overflow: hidden;
+  z-index: -1; }
+  .polygons .polygon1 {
+    top: auto;
+    position: fixed;
+    bottom: 30%;
+    right: 70px;
+    overflow: hidden; }
+  .polygons .polygon2 {
+    position: fixed;
+    top: 90%; }
+  .polygons .polygon7 {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    z-index: -1; }
 
 .humans {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: baseline;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 10%; }
+  .humans .human1 {
+    position: relative;
+    left: 15%; }
 
 .tweet-focus-page {
   background-color: black;
+  color: white;
   height: 100vh;
-  color: white; }
+  overflow-y: scroll; }
+  .tweet-focus-page .actions {
+    padding: 3% 0;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: smaller;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid; }
+    .tweet-focus-page .actions div {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+    .tweet-focus-page .actions span {
+      padding-left: 15%; }
+  .tweet-focus-page .reply-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 8%; }
+    .tweet-focus-page .reply-section textarea {
+      margin-bottom: 3%;
+      background-color: black;
+      color: #faff00;
+      border: 1px solid #faff00; }
+      .tweet-focus-page .reply-section textarea ::placeholder {
+        color: grey;
+        font-style: italic; }
+    .tweet-focus-page .reply-section .reply-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .tweet-focus-page .reply-section button {
+      border: 0;
+      line-height: 1.5;
+      padding: 0 20px;
+      text-align: center;
+      color: black;
+      border-radius: 3px;
+      background-color: #faff00;
+      cursor: pointer; }
+    .tweet-focus-page .reply-section .arrow {
+      cursor: pointer; }
+  .tweet-focus-page .inactive {
+    display: none; }
+  .tweet-focus-page .active {
+    display: flex; }
   .tweet-focus-page .back-action {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid yellow; }
+    border-bottom: 1px solid #faff00; }
     .tweet-focus-page .back-action .arrowback {
       padding: 0 5%; }
     .tweet-focus-page .back-action p {
-      color: yellow; }
+      color: #faff00; }
+  .tweet-focus-page .header-user {
+    display: flex;
+    margin-top: 5%;
+    align-items: center; }
+    .tweet-focus-page .header-user .avatar {
+      margin: 0 2%;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      border: 1px solid #383636; }
+    .tweet-focus-page .header-user img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+    .tweet-focus-page .header-user h2 {
+      font-size: 1em; }
+    .tweet-focus-page .header-user p {
+      margin: auto;
+      font-size: 0.9em; }
+  .tweet-focus-page .tweet-body {
+    margin: 8% 2%;
+    font-size: 14px; }
+  .tweet-focus-page .bubble {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #faff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    left: 320px;
+    cursor: pointer; }
+  .tweet-focus-page .comment-container {
+    padding: 10% 2%; }
+  .tweet-focus-page h4 {
+    font-size: 0.9em;
+    margin-left: 2%; }
+  .tweet-focus-page .comment-unit {
+    font-size: 0.9em; }
+    .tweet-focus-page .comment-unit .comment-text {
+      padding: 2% 2% 5%;
+      border-bottom: 1px solid grey;
+      margin: 0 2%;
+      font-size: 0.9em; }
+  .tweet-focus-page .user-commenting {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 2%; }
+    .tweet-focus-page .user-commenting .avatar-comment {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%; }
