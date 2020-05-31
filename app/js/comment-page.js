@@ -2,8 +2,10 @@ import API from "./API.js";
 import { getUsers, updateLikes, updateRT, postComment } from "./API.js";
 
 const storedTweet = JSON.parse(localStorage.tweet);
-// console.log(storedTweet.comments)
-// console.log(storedTweet)
+
+console.log(storedTweet)
+
+
 const replySection = document.querySelector(`.reply-section`);
 const bubbleComment = document.querySelector(".bubble");
 
@@ -112,16 +114,16 @@ const renderMainTweet = (tweet) => {
 const renderComments = async (tweet) => {
   const commentList = document.querySelector(".comment-list");
   const users = await getUsers();
-  //   console.log(users[0].name);
+   
+  // need to find way to retrieve user commenting details...
 
   tweet.comments.forEach((comment) => {
-    // const userImg = users.filter((user) => {user.id === comment[user].userId})
     const commentUnit = document.createElement("div");
     commentUnit.classList.add("comment-unit", `id-${comment.id}`);
     commentUnit.innerHTML = `
         <div class="user-commenting">
             <div class="avatar-comment">
-                <img src="./img/likes.svg" alt="likes">
+                <img src="./img/avatar 1.png" alt="likes">
             </div>
             <div class="username-comment">
                 <span>hater</span>

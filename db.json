@@ -610,6 +610,20 @@
       "content": "depends on the music",
       "date": "31/05/2020",
       "id": 50
-    }   
+    },
+    {
+      "userId": 1,
+      "tweetId": 5,
+      "content": "depends on the music",
+      "date": "31/05/2020",
+      "id": 51
+    },
+    {
+      "userId": 1,
+      "tweetId": 1,
+      "content": "lalalaaaa?",
+      "date": "31/05/2020",
+      "id": 52
+    }
   ]
 }

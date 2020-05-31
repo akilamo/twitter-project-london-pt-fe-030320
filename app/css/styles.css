@@ -670,7 +670,31 @@ body {
   background-color: black;
   color: white;
   height: 100vh;
-  overflow-y: scroll; }
+  opacity: 0.95; }
+  .tweet-focus-page .polygons {
+    opacity: 0.4;
+    position: fixed;
+    height: 100vh;
+    width: 414px;
+    overflow: hidden;
+    z-index: -1; }
+    .tweet-focus-page .polygons .polygon1 {
+      top: auto;
+      position: fixed;
+      bottom: 30%;
+      right: 65px;
+      overflow: hidden; }
+    .tweet-focus-page .polygons .polygon2 {
+      position: fixed;
+      top: 90%; }
+    .tweet-focus-page .polygons .polygon7 {
+      position: fixed;
+      top: 45%;
+      right: 50%;
+      z-index: -1; }
+    .tweet-focus-page .polygons .human1 {
+      position: fixed;
+      top: 50%; }
   .tweet-focus-page .actions {
     padding: 3% 0;
     margin: 5%;
@@ -777,8 +801,16 @@ body {
   .tweet-focus-page .user-commenting {
     display: flex;
     padding-top: 5%;
-    padding-left: 2%; }
+    padding-left: 2%;
+    align-items: center; }
     .tweet-focus-page .user-commenting .avatar-comment {
       height: 40px;
       width: 40px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      object-fit: contain;
+      overflow: hidden; }
+    .tweet-focus-page .user-commenting img {
+      width: 100%;
+      height: 100%; }
+    .tweet-focus-page .user-commenting span {
+      padding-left: 5px; }
