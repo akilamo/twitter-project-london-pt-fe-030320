@@ -17,10 +17,9 @@
     z-index: -1;
 
     .polygon1 {
-      top: auto;
       position: fixed;
       bottom: 30%;
-      right: 50px;
+      left: 370px;
       overflow: hidden;
     }
 
@@ -32,7 +31,7 @@
     .polygon7 {
       position: fixed;
       top: 45%;
-      right: 50%;
+      left: 200px;
       z-index: -1;
     }
 
@@ -70,13 +69,24 @@
     overflow: hidden;
 
     cursor: pointer;
+
+
   }
+
 
   .avatar > input {
     visibility: hidden;
     width: 0;
     height: 0;
   }
+
+.newpic{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 
   h2 {
     margin: 0;
@@ -92,7 +102,6 @@
       display: flex;
       justify-content: space-between;
       font-style: italic;
-      // width: 248px;
       font-size: 14px;
 
       p {

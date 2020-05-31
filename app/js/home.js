@@ -24,6 +24,7 @@ const renderUserHeader = (user) => {
 const profilePic = () => {
   const avatarInput = document.querySelector("input[type=file]");
   const avatarImg = document.querySelector("#profilepic");
+  const label = document.querySelector('label')
     avatarInput.addEventListener("change", () => {
       const file = document.querySelector("input[type=file]").files[0];
       const reader = new FileReader();
@@ -32,6 +33,7 @@ const profilePic = () => {
         () => {
           avatarImg.src = reader.result;
           avatarImg.classList.add("newpic");
+          label.classList.add("newpic")
         },
         false
       );

@@ -417,10 +417,9 @@ template {
   overflow: hidden;
   z-index: -1; }
   .home-page.polygons .polygon1 {
-    top: auto;
     position: fixed;
     bottom: 30%;
-    right: 50px;
+    left: 370px;
     overflow: hidden; }
   .home-page.polygons .polygon2 {
     position: fixed;
@@ -428,7 +427,7 @@ template {
   .home-page.polygons .polygon7 {
     position: fixed;
     top: 45%;
-    right: 50%;
+    left: 200px;
     z-index: -1; }
   .home-page.polygons .human-standing {
     position: fixed;
@@ -464,6 +463,11 @@ template {
   visibility: hidden;
   width: 0;
   height: 0; }
+
+.home-page .newpic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
 
 .home-page h2 {
   margin: 0; }
@@ -644,7 +648,7 @@ body {
     top: auto;
     position: fixed;
     bottom: 30%;
-    right: 70px;
+    left: 370px;
     overflow: hidden; }
   .polygons .polygon2 {
     position: fixed;
@@ -652,7 +656,7 @@ body {
   .polygons .polygon7 {
     position: fixed;
     top: 50%;
-    right: 50%;
+    left: 200px;
     z-index: -1; }
 
 .humans {
@@ -682,7 +686,7 @@ body {
       top: auto;
       position: fixed;
       bottom: 30%;
-      right: 65px;
+      left: 370px;
       overflow: hidden; }
     .tweet-focus-page .polygons .polygon2 {
       position: fixed;
@@ -690,7 +694,7 @@ body {
     .tweet-focus-page .polygons .polygon7 {
       position: fixed;
       top: 45%;
-      right: 50%;
+      left: 200px;
       z-index: -1; }
     .tweet-focus-page .polygons .human1 {
       position: fixed;
