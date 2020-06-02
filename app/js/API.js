@@ -73,33 +73,6 @@ const postComment = async (newComment) => {
     .catch((error) => error);
 };
 
-// const postComment = async (newComment,tweet) => {
-//   const configObject = {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       Accept: "application/json",
-//     },
-//     body: JSON.stringify(newComment),
-//   };
-//   return await fetch(`${API_ENDPOINT}/tweets/${tweet.id}/comments`, configObject)
-//     .then((response) => {
-//       if (response.ok) {
-//         return response.json();
-//       } else {
-//         throw "Oops something went wrong!";
-//       }
-//     })
-//     .catch((error) => error);
-// };
-
-
-
-
-
-
-
-
 const postTweet = async (newTweet) => {
   const configObject = {
     method: "POST",

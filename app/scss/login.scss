@@ -1,5 +1,4 @@
 .login-page {
-  
   $error: rgb(191, 7, 84);
 
   background-color: black;
@@ -68,11 +67,11 @@
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid $error;
-    color:$error;
+    color: $error;
   }
 
   input[type="password"] {
-      border: none;
+    border: none;
     outline: none;
     border-bottom: 1px solid #faff00;
     background-color: black;

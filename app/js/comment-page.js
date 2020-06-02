@@ -114,9 +114,6 @@ const renderMainTweet = (tweet) => {
 const renderComments = async (tweet) => {
   const commentList = document.querySelector(".comment-list");
   const users = await getUsers();
-   
-  // need to find way to retrieve user commenting details...
-
   tweet.comments.forEach((comment) => {
     const commentUnit = document.createElement("div");
     commentUnit.classList.add("comment-unit", `id-${comment.id}`);
